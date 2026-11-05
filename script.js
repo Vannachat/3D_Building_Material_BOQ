@@ -24,16 +24,16 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { TransformControls } from 'three/addons/controls/TransformControls.js';
 import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
-import { CreateWallCommand } from './src/history/commands/CreateWallCommand.js';
-import { DeleteOpeningCommand } from './src/history/commands/OpeningCommands.js';
-import { bootstrapParametricBuilding } from './src/app/AppBootstrap.js';
-import { LandPlotOverlay } from './src/scene/LandPlotOverlay.js';
-import { CutGraph } from './src/landplot/CutGraph.js';
-import { CutTool } from './src/ui/build/CutTool.js';
-import { CutGraphRenderer } from './src/scene/CutGraphRenderer.js';
-import { Events } from './src/core/EventBus.js';
-import { distanceXZ } from './src/core/MathUtils.js';
-import { t, initI18n, setLanguage, getLanguage, detectDefaultLanguage, onLanguageChange } from './src/i18n/i18n.js';
+import { CreateWallCommand } from './CreateWallCommand.js';
+import { DeleteOpeningCommand } from './OpeningCommands.js';
+import { bootstrapParametricBuilding } from './AppBootstrap.js';
+import { LandPlotOverlay } from './LandPlotOverlay.js';
+import { CutGraph } from './CutGraph.js';
+import { CutTool } from './CutTool.js';
+import { CutGraphRenderer } from './CutGraphRenderer.js';
+import { Events } from './EventBus.js';
+import { distanceXZ } from './MathUtils.js';
+import { t, initI18n, setLanguage, getLanguage, detectDefaultLanguage, onLanguageChange } from './i18n.js';
 
 // --- 1. SECURITY ---
 document.addEventListener('contextmenu', event => event.preventDefault());
@@ -147,12 +147,12 @@ onLanguageChange(() => {
     } catch (e) { /* not ready yet, skip */ }
 });
 
-import { getMaterials, DEFAULT_MATERIAL_ID, addCustomMaterial, removeCustomMaterial, getMaterialTextures, setMaterialTextures, clearMaterialTextures, serializeMaterialRegistry, loadMaterialRegistry, getBoqSettings, ceilQty, COUNT_UNITS, setWastePct, setSandStoneBulking, applyRecommendedWaste, resetBoqSettings } from './src/materials/MaterialLibrary.js';
-import { fileToDataURL } from './src/materials/TextureCache.js';
-import { scaleBoxUVsToRealSize } from './src/geometry/GeometryFactory.js';
-import { openTextureCropTool, isLikelyExrDataUrl } from './src/materials/TextureCropTool.js';
-import { applyTexturesToMaterial, buildStandardMaterial } from './src/materials/MaterialBuilder.js';
-import { generateId } from './src/core/IdGenerator.js';
+import { getMaterials, DEFAULT_MATERIAL_ID, addCustomMaterial, removeCustomMaterial, getMaterialTextures, setMaterialTextures, clearMaterialTextures, serializeMaterialRegistry, loadMaterialRegistry, getBoqSettings, ceilQty, COUNT_UNITS, setWastePct, setSandStoneBulking, applyRecommendedWaste, resetBoqSettings } from './MaterialLibrary.js';
+import { fileToDataURL } from './TextureCache.js';
+import { scaleBoxUVsToRealSize } from './GeometryFactory.js';
+import { openTextureCropTool, isLikelyExrDataUrl } from './TextureCropTool.js';
+import { applyTexturesToMaterial, buildStandardMaterial } from './MaterialBuilder.js';
+import { generateId } from './IdGenerator.js';
 
 // เวอร์ชันนี้ถอดเฉพาะ "ปริมาณวัสดุ" ตามสูตรตรงๆ ไม่มีค่าเผื่อสูญเสียและไม่มีการคิดราคา (เพราะราคาไม่คงที่)
 
