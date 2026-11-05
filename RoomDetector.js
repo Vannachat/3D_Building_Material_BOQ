@@ -1,5 +1,5 @@
 import { Room } from './Room.js';
-import { signedPolygonAreaXZ, polygonPerimeterXZ } from '../../core/MathUtils.js';
+import { signedPolygonAreaXZ, polygonPerimeterXZ } from './MathUtils.js';
 
 /**
  * RoomDetector — automatically detects enclosed rooms from wall graph
