@@ -1,20 +1,20 @@
-import { BuildingModel } from '../building/BuildingModel.js';
-import { WallManager } from '../building/wall/WallManager.js';
-import { OpeningManager } from '../building/opening/OpeningManager.js';
-import { FloorManager } from '../building/floor/FloorManager.js';
-import { RoomDetector } from '../building/room/RoomDetector.js';
-import { QuantityEngine } from '../calculation/QuantityEngine.js';
-import { BOQEngine } from '../boq/BOQEngine.js';
-import { WallRenderer } from '../scene/WallRenderer.js';
-import { OpeningRenderer } from '../scene/OpeningRenderer.js';
-import { WallTool } from '../ui/build/WallTool.js';
-import { OpeningTool } from '../ui/build/OpeningTool.js';
-import { serializeProject, loadProject } from '../persistence/ProjectSerializer.js';
-import { Events } from '../core/EventBus.js';
-import { CommandManager } from '../history/CommandManager.js';
-import { CreateWallCommand } from '../history/commands/CreateWallCommand.js';
-import { DeleteWallCommand } from '../history/commands/DeleteWallCommand.js';
-import { CreateOpeningCommand, DeleteOpeningCommand } from '../history/commands/OpeningCommands.js';
+import { BuildingModel } from './BuildingModel.js';
+import { WallManager } from './WallManager.js';
+import { OpeningManager } from './OpeningManager.js';
+import { FloorManager } from './FloorManager.js';
+import { RoomDetector } from './RoomDetector.js';
+import { QuantityEngine } from './QuantityEngine.js';
+import { BOQEngine } from './BOQEngine.js';
+import { WallRenderer } from './WallRenderer.js';
+import { OpeningRenderer } from './OpeningRenderer.js';
+import { WallTool } from './WallTool.js';
+import { OpeningTool } from './OpeningTool.js';
+import { serializeProject, loadProject } from './ProjectSerializer.js';
+import { Events } from './EventBus.js';
+import { CommandManager } from './CommandManager.js';
+import { CreateWallCommand } from './CreateWallCommand.js';
+import { DeleteWallCommand } from './DeleteWallCommand.js';
+import { CreateOpeningCommand, DeleteOpeningCommand } from './OpeningCommands.js';
 
 /**
  * bootstrapParametricBuilding — the single additive entry point called
