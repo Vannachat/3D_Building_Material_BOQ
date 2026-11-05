@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { distanceXZ } from '../../core/MathUtils.js';
-import { SnappingSystem } from '../../interaction/SnappingSystem.js';
+import { distanceXZ } from './MathUtils.js';
+import { SnappingSystem } from './SnappingSystem.js';
 
 /**
  * WallTool (project spec §9): click start, drag, live preview (length
