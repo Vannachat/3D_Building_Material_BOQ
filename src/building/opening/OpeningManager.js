@@ -1,5 +1,5 @@
-import { Events } from './EventBus.js';
-import { getWallGeometry } from './WallGeometry.js';
+import { Events } from '../../core/EventBus.js';
+import { getWallGeometry } from '../wall/WallGeometry.js';
 
 const EPS = 1e-3;
 

@@ -1,5 +1,5 @@
-import { Events } from './EventBus.js';
-import { GeometryFactory } from './GeometryFactory.js';
+import { Events } from '../core/EventBus.js';
+import { GeometryFactory } from '../geometry/GeometryFactory.js';
 
 /**
  * WallRenderer (project spec §51): reacts to BuildingModel events and

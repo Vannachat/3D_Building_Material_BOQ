@@ -1,7 +1,7 @@
-import { calculateWall } from './WallCalculator.js';
-import { calculateRoom } from './RoomCalculator.js';
-import { aggregateMaterials } from './MaterialAggregator.js';
-import { DEFAULT_MATERIAL_ID } from './MaterialLibrary.js';
+import { calculateWall } from './calculators/WallCalculator.js';
+import { calculateRoom } from './calculators/RoomCalculator.js';
+import { aggregateMaterials } from './aggregation/MaterialAggregator.js';
+import { DEFAULT_MATERIAL_ID } from '../materials/MaterialLibrary.js';
 
 /**
  * QuantityEngine (project spec §30). Reads a BuildingModel and returns

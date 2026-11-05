@@ -1,6 +1,6 @@
-import { Events } from './EventBus.js';
-import { MIN_WALL_LENGTH } from './Constants.js';
-import { distanceXZ } from './MathUtils.js';
+import { Events } from '../../core/EventBus.js';
+import { MIN_WALL_LENGTH } from '../../core/Constants.js';
+import { distanceXZ } from '../../core/MathUtils.js';
 
 /**
  * WallManager — the only sanctioned way to create/edit/delete walls

@@ -1,5 +1,5 @@
-import { BuildingModel } from './BuildingModel.js';
-import { PROJECT_VERSION } from './Constants.js';
+import { BuildingModel } from '../building/BuildingModel.js';
+import { PROJECT_VERSION } from '../core/Constants.js';
 
 /**
  * ProjectSerializer (project spec §43, §44). Serializes the parametric
