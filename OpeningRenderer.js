@@ -1,5 +1,5 @@
-import { Events } from '../core/EventBus.js';
-import { GeometryFactory } from '../geometry/GeometryFactory.js';
+import { Events } from './EventBus.js';
+import { GeometryFactory } from './GeometryFactory.js';
 import { applyWallDelta } from './WallTransform.js';
 
 /**
